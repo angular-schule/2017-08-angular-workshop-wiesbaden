@@ -76,7 +76,14 @@ webpack -v
 ## Tag 0 - LESS und Bootstrap
 
 Zur Einstimmung werden wir uns mit HMTL5, CSS3 und dem CSS-Preproessor LESS beschäftigen.
-Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.
+Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.  
+Gib anschließend den Befehl `npm start` ein. Es sollte eine Seite mit "Hello, world" erscheinen.
+
+## Tag 1 - TypeScript
+
+Wir werden die Programmiersprache TypeScript erkunden.
+Wechsel bitte in das Verzeichnis `typescript-playground` und führe `npm install` aus.  
+Gib anschließend den Befehl `npm start` ein. Es sollte der Text "Hello, world" auf der Konsole erscheinen.
 
 ## Startprojekt erzeugen
 
