@@ -79,6 +79,7 @@ Bitte lade dieses Repository herunter:
 
 ```
 git clone https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden.git
+cd 2017-08-angular-workshop-wiesbaden
 ```
 
 Sollte der Einsatz von Git nicht möglich sein, so kannst du auch den neuesten Stand als [ZIP-Datei](https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden/archive/master.zip) herunter laden.
