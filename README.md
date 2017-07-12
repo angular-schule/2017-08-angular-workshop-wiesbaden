@@ -30,17 +30,29 @@ Folgende Tools erleichtern die Arbeit, der Workshop kann aber auch ohne durchgef
 
 ## Pakete installieren
 
-Alle Windows-User sollten vor Beginn des Kurses die `windows-build-tools` installieren. Warnungen von NPM können ignoriert werden.  
+Alle Windows-User sollten vor Beginn des Kurses die [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) installieren. Warnungen von NPM können ignoriert werden.  
 Nach der Installation musst Du eine neue Konsole starten!
 
 ```
 npm install -g windows-build-tools
 ```
 
-Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl kannst Du die CLI installieren:
+Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl kannst Du die Angular-CLI installieren:
 
 ```
-npm install -g @angular/cli@1.2.0
+npm install -g @angular/cli@1.2.1
+```
+
+Zu Beginn des Kurses wollen wir den TypeScript-Compiler ohne Hilfsmittel verwenden. Installiere diesen bite wie folgt:
+
+```
+npm install -g typescript@2.4.1
+```
+
+Wir werden zusätzlich diverse Transformationen von TypeScript und LESS mit Webpack erledigen. Mit folgendem Befehl kannst Du die Webpack-CLI installieren:
+
+```
+npm install -g webpack@3.1.0
 ```
 
 Überprüfe bitte anschließend die Versionen, damit wir beim Workshop alle auf dem gleichen Stand sind.
@@ -52,9 +64,19 @@ npm -v
 > Erwartet: 3.x oder höher
 
 ng -v
-> Erwartet: 1.2.0
+> Erwartet: 1.2.1
 
+tsc -v
+> Erwartet: 2.4.1
+
+webpack -v
+> Erwartet: 3.1.0
 ```
+
+## Tag 0 - LESS und Bootstrap
+
+Zur Einstimmung werden wir uns mit HMTL5, CSS3 und dem CSS-Preproessor LESS beschäftigen.
+Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.
 
 ## Startprojekt erzeugen
 
