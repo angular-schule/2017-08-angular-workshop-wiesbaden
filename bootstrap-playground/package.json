@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-playground",
+  "version": "1.0.0",
+  "description": "a playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden.git"
+  },
+  "author": "Johannes Hoppe",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.28.4",
+    "extract-text-webpack-plugin": "3.0.0",
+    "jquery": "3.2.1",
+    "less": "2.7.2",
+    "less-loader": "4.0.5",
+    "file-loader": "0.11.2",
+    "style-loader": "0.18.2",
+    "webpack": "3.2.0",
+    "webpack-dev-server": "2.5.1"
+  }
+}
