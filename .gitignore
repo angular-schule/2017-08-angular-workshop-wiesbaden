@@ -1,1 +1,5 @@
 **/node_modules/
+typescript-playground/bundle.js
+typescript-playground/bundle.js.map
+npm-debug.log
+**/dist/
