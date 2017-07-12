@@ -28,7 +28,7 @@ Folgende Tools erleichtern die Arbeit, der Workshop kann aber auch ohne durchgef
 3. Git (und ggf. ein Client wie GitExtensions: [https://gitextensions.github.io](https://gitextensions.github.io))
 
 
-## Pakete installieren
+## Globale Pakete installieren
 
 Alle Windows-User sollten vor Beginn des Kurses die [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) installieren. Warnungen von NPM können ignoriert werden.  
 Nach der Installation musst Du eine neue Konsole starten!
