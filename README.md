@@ -73,35 +73,26 @@ webpack -v
 > Erwartet: 3.1.0
 ```
 
-## Tag 0 - LESS und Bootstrap
+## Tag 1 - LESS und Bootstrap
 
 Zur Einstimmung werden wir uns mit HMTL5, CSS3 und dem CSS-Preproessor LESS beschäftigen.
-Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.  
-Gib anschließend den Befehl `npm start` ein. Es sollte eine Seite mit "Hello, world" erscheinen.
+Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.
+Gib anschließend den Befehl `npm start` ein. Es sollte eine Seite mit "Hello, world!" erscheinen.
 
-## Tag 1 - TypeScript
+## Tag 2 - TypeScript
 
 Wir werden die Programmiersprache TypeScript erkunden.
-Wechsel bitte in das Verzeichnis `typescript-playground` und führe `npm install` aus.  
-Gib anschließend den Befehl `npm start` ein. Es sollte der Text "Hello, world" auf der Konsole erscheinen.
+Wechsel bitte in das Verzeichnis `typescript-playground` und führe `npm install` aus.
+Gib anschließend den Befehl `npm start` ein. Es sollte der Text "Hello, world!" auf der Konsole erscheinen.
 
-## Startprojekt erzeugen
+## Tag 2 bis 5 - Angular
 
-Bitte lege das Übungsprojekt schon vor Beginn des Workshops an.
-Die Angular CLI nimmt uns die meisten Schritte schon ab.
-Was die Parameter im Einzelnen bedeuten, besprechen wir natürlich im Workshop!
-
-Führe in Deinem Arbeitsverzeichnis die folgenden Befehle aus:
+Wechsel bitte in das Verzeichnis `book-rating` und führe `npm install` aus.
+Für nun folgenden Befehl aus:
 
 ```
-ng new book-rating --routing --styles=sass --prefix=br
-cd book-rating
 ng serve -o
 ```
-
-Achtung! Die Installation kann bei langsamer Internetverbindung sehr lange dauern.
-Warte beim Schritt `Installing packages for tooling via npm.` mit Geduld ab!
-
 
 > Auf http://localhost:4200 sollte nun eine Website mit dem Text "Welcome to br!!" erscheinen!
 Wenn bei allen Teilnehmern das Grundgerüst steht, können wir ohne Zeitverlust loslegen.
