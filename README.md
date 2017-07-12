@@ -40,7 +40,7 @@ npm install -g windows-build-tools
 Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl kannst Du die Angular-CLI installieren:
 
 ```
-npm install -g @angular/cli@1.2.1
+npm install -g @angular/cli@1.2.0
 ```
 
 Zu Beginn des Kurses wollen wir den TypeScript-Compiler ohne Hilfsmittel verwenden. Installiere diesen bitte wie folgt:
@@ -64,7 +64,7 @@ npm -v
 > Erwartet: 3.x oder höher
 
 ng -v
-> Erwartet: 1.2.1
+> Erwartet: 1.2.0
 
 tsc -v
 > Erwartet: 2.4.1
@@ -72,6 +72,17 @@ tsc -v
 webpack -v
 > Erwartet: 3.1.0
 ```
+
+## Projekt herunterladen
+
+Bitte lade dieses Repository herunter:
+
+```
+git clone https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden.git
+```
+
+Sollte der Einsatz von Git nicht möglich sein, so kannst du auch den neuesten Stand als [ZIP-Datei](https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden/archive/master.zip) herunter laden.
+
 
 ## Tag 1 - LESS und Bootstrap
 
@@ -88,6 +99,10 @@ Gib anschließend den Befehl `npm start` ein. Es sollte der Text "Hello, world!"
 ## Tag 2 bis 5 - Angular
 
 Wechsel bitte in das Verzeichnis `book-rating` und führe `npm install` aus.
+
+Achtung! Die Installation kann bei langsamer Internetverbindung sehr lange dauern.
+Warte beim Schritt `Installing packages for tooling via npm.` mit Geduld ab!
+
 Für nun folgenden Befehl aus:
 
 ```
@@ -107,6 +122,6 @@ Bei Fragen wende dich einfach direkt an das Angular-Schule-Team:
 
 <hr>
 
-### &copy; 2017 http://angular.schule, Stand: 10.07.2017
+### &copy; 2017 http://angular.schule, Stand: 12.07.2017
 
 
