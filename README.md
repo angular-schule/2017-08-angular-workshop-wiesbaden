@@ -43,7 +43,7 @@ Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl
 npm install -g @angular/cli@1.2.1
 ```
 
-Zu Beginn des Kurses wollen wir den TypeScript-Compiler ohne Hilfsmittel verwenden. Installiere diesen bite wie folgt:
+Zu Beginn des Kurses wollen wir den TypeScript-Compiler ohne Hilfsmittel verwenden. Installiere diesen bitte wie folgt:
 
 ```
 npm install -g typescript@2.4.1
