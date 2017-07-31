@@ -76,7 +76,7 @@ Was die Parameter im Einzelnen bedeuten, besprechen wir natürlich im Workshop!
 Führe in Deinem Arbeitsverzeichnis die folgenden Befehle aus:
 
 ```
-ng new book-rating --routing --styles=sass --prefix=br
+ng new book-rating --routing --style=less --prefix=br
 cd book-rating
 ng serve -o
 ```
