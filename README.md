@@ -98,6 +98,6 @@ Bei Fragen wende dich einfach direkt an das Angular-Schule-Team:
 
 <hr>
 
-### &copy; 2017 http://angular.schule, Stand: 31.08.2017
+### &copy; 2017 http://angular.schule, Stand: 31.07.2017
 
 
