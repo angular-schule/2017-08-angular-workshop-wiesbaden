@@ -17,8 +17,14 @@ Damit wir gleich durchstarten können, solltest Du ein paar Vorbereitungen treff
 1. Node.js **6.9** oder höher: [https://nodejs.org](https://nodejs.org)
 2. Visual Studio Code **1.10** oder höher: [https://code.visualstudio.com](https://code.visualstudio.com)
    * [Angular-Schule: Extension Pack](https://marketplace.visualstudio.com/items?itemName=angular-schule.angular-schule-extension-pack) für Visual Studio Code 
-3. Google Chrome: [https://www.google.com/chrome/](https://www.google.com/chrome/)
-   
+3. Google Chrome: [https://www.google.com/chrome/](https://www.google.com/chrome/) - oder Google Chrome Portable
+
+Zum Extension Pack:
+Aufgrund von Download-Beschränkungen wird die Sammlung wahrscheinlich nicht installierbar sein.
+Bitte lade [dieses ZIP-Archiv herunter](http://assets.angular.schule/2017-08-angular-schule-extension-pack.zip) und installiere die Extensions manuell:
+
+![Screenshot VSCode](http://assets.angular.schule/vscode_install_from_vsix.png)
+
 
 ## Globale Pakete installieren
 
