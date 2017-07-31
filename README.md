@@ -19,40 +19,27 @@ Damit wir gleich durchstarten können, solltest Du ein paar Vorbereitungen treff
    * [Angular-Schule: Extension Pack](https://marketplace.visualstudio.com/items?itemName=angular-schule.angular-schule-extension-pack) für Visual Studio Code 
 3. Google Chrome: [https://www.google.com/chrome/](https://www.google.com/chrome/)
    
-## Hilfreiche Software
-
-Folgende Tools erleichtern die Arbeit, der Workshop kann aber auch ohne durchgeführt werden.
-
-1. Chrome Extension: [Angular Augury](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd)
-2. ngrev: [https://github.com/mgechev/ngrev/releases](https://github.com/mgechev/ngrev/releases)
-3. Git (und ggf. ein Client wie GitExtensions: [https://gitextensions.github.io](https://gitextensions.github.io))
-
 
 ## Globale Pakete installieren
 
-Alle Windows-User sollten vor Beginn des Kurses die [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) installieren. Warnungen von NPM können ignoriert werden.  
-Nach der Installation musst Du eine neue Konsole starten!
-
-```
-npm install -g windows-build-tools
-```
+Bitte installiere folgende Software. Warnungen von NPM können ignoriert werden.  
 
 Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl kannst Du die Angular-CLI installieren:
 
 ```
-npm install -g @angular/cli@1.2.0
+npm install -g @angular/cli@1.2.6
 ```
 
 Zu Beginn des Kurses wollen wir den TypeScript-Compiler ohne Hilfsmittel verwenden. Installiere diesen bitte wie folgt:
 
 ```
-npm install -g typescript@2.4.1
+npm install -g typescript@2.4.2
 ```
 
 Wir werden zusätzlich diverse Transformationen von TypeScript und LESS mit Webpack erledigen. Mit folgendem Befehl kannst Du die Webpack-CLI installieren:
 
 ```
-npm install -g webpack@3.1.0
+npm install -g webpack@3.2.0
 ```
 
 Überprüfe bitte anschließend die Versionen, damit wir beim Workshop alle auf dem gleichen Stand sind.
@@ -64,51 +51,33 @@ npm -v
 > Erwartet: 3.x oder höher
 
 ng -v
-> Erwartet: 1.2.0
+> Erwartet: 1.2.6
 
 tsc -v
-> Erwartet: 2.4.1
+> Erwartet: 2.4.2
 
 webpack -v
-> Erwartet: 3.1.0
+> Erwartet: 3.2.0
 ```
 
-## Projekt herunterladen
 
-Bitte lade dieses Repository herunter:
+## Startprojekt erzeugen
+
+Bitte lege das Übungsprojekt schon vor Beginn des Workshops an.
+Die Angular CLI nimmt uns die meisten Schritte schon ab.
+Was die Parameter im Einzelnen bedeuten, besprechen wir natürlich im Workshop!
+
+Führe in Deinem Arbeitsverzeichnis die folgenden Befehle aus:
 
 ```
-git clone https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden.git
-cd 2017-08-angular-workshop-wiesbaden
+ng new book-rating --routing --styles=sass --prefix=br
+cd book-rating
+ng serve -o
 ```
-
-Sollte der Einsatz von Git nicht möglich sein, so kannst du auch den neuesten Stand als [ZIP-Datei](https://github.com/angular-schule/2017-08-angular-workshop-wiesbaden/archive/master.zip) herunter laden.
-
-
-## Tag 1 - LESS und Bootstrap
-
-Zur Einstimmung werden wir uns mit HMTL5, CSS3 und dem CSS-Preproessor LESS beschäftigen.
-Wechsel bitte in das Verzeichnis `bootstrap-playground` und führe `npm install` aus.
-Gib anschließend den Befehl `npm start` ein. Es sollte eine Seite mit "Hello, world!" erscheinen.
-
-## Tag 2 - TypeScript
-
-Wir werden die Programmiersprache TypeScript erkunden.
-Wechsel bitte in das Verzeichnis `typescript-playground` und führe `npm install` aus.
-Gib anschließend den Befehl `npm start` ein. Es sollte der Text "Hello, world!" auf der Konsole erscheinen.
-
-## Tag 2 bis 5 - Angular
-
-Wechsel bitte in das Verzeichnis `book-rating` und führe `npm install` aus.
 
 Achtung! Die Installation kann bei langsamer Internetverbindung sehr lange dauern.
 Warte beim Schritt `Installing packages for tooling via npm.` mit Geduld ab!
 
-Für nun folgenden Befehl aus:
-
-```
-ng serve -o
-```
 
 > Auf http://localhost:4200 sollte nun eine Website mit dem Text "Welcome to br!!" erscheinen!
 Wenn bei allen Teilnehmern das Grundgerüst steht, können wir ohne Zeitverlust loslegen.
@@ -123,6 +92,6 @@ Bei Fragen wende dich einfach direkt an das Angular-Schule-Team:
 
 <hr>
 
-### &copy; 2017 http://angular.schule, Stand: 12.07.2017
+### &copy; 2017 http://angular.schule, Stand: 31.08.2017
 
 
