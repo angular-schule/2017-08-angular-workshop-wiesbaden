@@ -1,0 +1,25 @@
+{
+  "name": "html5-playground",
+  "version": "1.0.0",
+  "description": "a playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "css-loader": "0.28.4",
+    "node-sass": "4.5.3",
+    "jquery": "3.2.1",
+    "sass-loader": "6.0.6",
+    "file-loader": "0.11.2",
+    "style-loader": "0.18.2",
+    "webpack": "3.2.0",
+    "webpack-dev-server": "2.5.1",    
+    "font-awesome": "^4.7.0",
+    "roboto-fontface": "0.8.0"
+  }
+}

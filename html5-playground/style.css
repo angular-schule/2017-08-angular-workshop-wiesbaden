@@ -8,3 +8,27 @@ body {
 #hallo::after {
   content: " welt";
 }
+
+/* 
+
+1. Beliebig tief: 
+   .class1 .class2
+
+2. Direktes Kind:
+   .class1 > .class2
+
+3. UND
+   .class1.class2
+
+*/
+
+i.fa.fa-heart, 
+i.fa.fa-html5 {
+  color: red !important;
+}
+
+
+i.fa.fa-heart {
+  border: 1px solid red;
+  color: blue;
+}
