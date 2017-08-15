@@ -1,5 +1,41 @@
-@import '~bootstrap/scss/bootstrap.scss';
+$blue: #535EA7;
+$red:  #C30023;
 
-body {
-  color: red;
+@import '~bootstrap/scss/bootstrap';
+
+@mixin my-gradient($amount-of-white) {
+  background: linear-gradient(0deg, white $amount-of-white, $red 1px, $blue 100%);
+}
+
+.btn-primary {
+  font-weight: bold;
+
+  // wird zu folgendem Selektor: .btn-primary span
+  span {
+    color: blue;
+  }
+
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+.jumbotron {
+  @include my-gradient(20px);
+  color: white;
+}
+
+.super-jumbotron {
+  @extend .jumbotron;
+  border: 2px solid $blue;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
