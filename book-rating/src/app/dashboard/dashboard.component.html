@@ -1,6 +1,8 @@
 <div *ngFor="let b of books; index as i; even as e"
      [ngClass]="{ gray: e }">
 
+  {{ i | addOne }}.
+
   <br-book
     [book]="b"
   ></br-book>

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BookComponent } from './book/book.component';
+import { AddOnePipe } from './add-one.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    BookComponent
+    BookComponent,
+    AddOnePipe
   ],
   imports: [
     BrowserModule,
