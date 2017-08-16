@@ -1,4 +1,10 @@
-<br-book
-  *ngFor="let b of books"
-  [book]="b"
-></br-book>
+<div *ngFor="let b of books; index as i; even as e"
+     [ngClass]="{ gray: e }">
+
+  <br-book
+    [book]="b"
+  ></br-book>
+
+  <hr>
+
+</div>
