@@ -10,7 +10,11 @@ export class DashboardComponent implements OnInit {
 
   books: Book[];
 
-  constructor() { }
+  constructor() {
+    // window.setInterval(() => {
+    //   this.books.splice(-1, 1);
+    // }, 1000);
+  }
 
   ngOnInit() {
     this.books = [
@@ -18,5 +22,11 @@ export class DashboardComponent implements OnInit {
       new Book('111', 'AngularJS 1.x', 'Oldie but Goldie', 3),
       new Book('222', '22', '22')
     ];
+    this.reorderBooks(null);
+  }
+
+  reorderBooks(book: Book) {
+    console.log(book);
+    this.books.sort((a, b) => b.rating - a.rating);
   }
 }
