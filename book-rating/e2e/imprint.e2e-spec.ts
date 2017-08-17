@@ -6,15 +6,17 @@ fdescribe('R+V imprint', () => {
 
   it('should display the correct board members', () => {
 
+    browser.driver.manage().window().setSize(800, 600);
     browser.get('https://www.ruv.de/impressum');
     const content = $('.standard-content');
+    const text = content.getText();
 
-    expect(content.getText()).toContain('Dr. Edgar Martin');
-    expect(content.getText()).toContain('Frank-Henning Florian');
-    expect(content.getText()).toContain('Heinz-Jürgen Kallerhoff');
-    expect(content.getText()).toContain('Julia Merkel');
-    expect(content.getText()).toContain('Marc René Michallet');
-    expect(content.getText()).toContain('Peter Weiler');
+    expect(text).toContain('Dr. Edgar Martin');
+    expect(text).toContain('Frank-Henning Florian');
+    expect(text).toContain('Heinz-Jürgen Kallerhoff');
+    expect(text).toContain('Julia Merkel');
+    expect(text).toContain('Marc René Michallet');
+    expect(text).toContain('Peter Weiler');
   });
 
   afterAll(() => browser.ignoreSynchronization = false);
