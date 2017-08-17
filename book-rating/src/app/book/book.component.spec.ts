@@ -22,20 +22,18 @@ describe('BookComponent', () => {
     // component.book = new Book('IBN', 'Titel', 'Tada!');
   });
 
-  it('should forward rateUp call to book', () => {
-
-    let rateUpWasCalled = false;
+  // TODO:
+  it('should rateUp the book when the button is pressed', () => {
 
     component.book = {
       title: 'Mocked Book!',
-      rateUp: () => {
-        rateUpWasCalled = true;
-      },
+      rateUp: () => { },
     } as Book;
 
-    component.rateUp();
+    spyOn(component.book, 'rateUp');
     fixture.detectChanges();
 
-    expect(rateUpWasCalled).toBe(true);
+    fixture.nativeElement.querySelector('[data-rate-up-button]').click();
+    expect(component.book.rateUp).toHaveBeenCalled();
   });
 });
