@@ -23,12 +23,8 @@ describe('BookComponent', () => {
 
     component.book = {
       title: 'Mocked Book!',
-      isbn: '',
-      rating: 1,
-      description: '',
       rateUp: () => {},
-      rateDown: () => {},
-    };
+    } as Book;
 
     fixture.detectChanges();
   });
