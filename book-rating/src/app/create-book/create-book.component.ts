@@ -1,6 +1,6 @@
-import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Book } from '../shared/book';
-import { NgModel } from '@angular/forms';
+import { NgModel, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'br-create-book',
@@ -12,7 +12,11 @@ export class CreateBookComponent {
   // TODO: two-bay binding
   book = Book.empty();
 
+  // named reference var
   @ViewChild('isbn') myIsbnNgModel: NgModel;
+
+  // by type
+  @ViewChild(NgForm) myForm: NgForm;
 
   @Output()
   bookCreated = new EventEmitter<Book>();
@@ -22,5 +26,6 @@ export class CreateBookComponent {
 
     this.bookCreated.emit(this.book);
     this.book = Book.empty();
+    this.myForm.reset(this.book);
   }
 }
