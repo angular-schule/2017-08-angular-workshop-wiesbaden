@@ -1,13 +1,13 @@
-import { browser, element, by } from 'protractor';
+import { browser, $ } from 'protractor';
 
-describe('R+V imprint', () => {
+fdescribe('R+V imprint', () => {
 
   beforeAll(() => browser.ignoreSynchronization = true);
 
   it('should display the correct board members', () => {
 
     browser.get('https://www.ruv.de/impressum');
-    const content = element(by.css('.standard-content'));
+    const content = $('.standard-content');
 
     expect(content.getText()).toContain('Dr. Edgar Martin');
     expect(content.getText()).toContain('Frank-Henning Florian');
