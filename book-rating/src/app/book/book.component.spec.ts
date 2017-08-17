@@ -19,7 +19,16 @@ describe('BookComponent', () => {
     component = fixture.componentInstance;
 
     // this is an integration test (because it's a real book!)
-    component.book = new Book('IBN', 'Titel', 'Tada!');
+    // component.book = new Book('IBN', 'Titel', 'Tada!');
+
+    component.book = {
+      title: 'Mocked Book!',
+      isbn: '',
+      rating: 1,
+      description: '',
+      rateUp: () => {},
+      rateDown: () => {},
+    };
 
     fixture.detectChanges();
   });
