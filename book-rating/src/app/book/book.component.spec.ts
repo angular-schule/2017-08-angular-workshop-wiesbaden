@@ -20,16 +20,22 @@ describe('BookComponent', () => {
 
     // this is an integration test (because it's a real book!)
     // component.book = new Book('IBN', 'Titel', 'Tada!');
+  });
+
+  it('should forward rateUp call to book', () => {
+
+    let rateUpWasCalled = false;
 
     component.book = {
       title: 'Mocked Book!',
-      rateUp: () => {},
+      rateUp: () => {
+        rateUpWasCalled = true;
+      },
     } as Book;
 
+    component.rateUp();
     fixture.detectChanges();
-  });
 
-  it('should be created', () => {
-    expect(component).toBeTruthy();
+    expect(rateUpWasCalled).toBe(true);
   });
 });
