@@ -1,5 +1,9 @@
-  <br-book
-    *ngFor="let b of books"
-    [book]="b"
-    (rated)="reorderBooks($event)"
-  ></br-book>
+<br-create-book
+  (bookCreated)="add($event)"
+></br-create-book>
+
+<br-book
+  *ngFor="let b of books"
+  [book]="b"
+  (rated)="reorderBooks($event)"
+></br-book>

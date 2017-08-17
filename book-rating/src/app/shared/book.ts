@@ -5,6 +5,11 @@ export class Book {
               public rating = 0) {
   }
 
+  // factory
+  static empty(): Book {
+    return new Book('', '', '');
+  }
+
   rateUp() {
     if (this.rating < 5) {
       this.rating++;

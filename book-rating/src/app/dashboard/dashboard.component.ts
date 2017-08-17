@@ -10,12 +10,6 @@ export class DashboardComponent implements OnInit {
 
   books: Book[];
 
-  constructor() {
-    // window.setInterval(() => {
-    //   this.books.splice(-1, 1);
-    // }, 1000);
-  }
-
   ngOnInit() {
     this.books = [
       new Book('000', 'Angular', 'Zurück in die Zukunft', 5),
@@ -28,5 +22,9 @@ export class DashboardComponent implements OnInit {
   reorderBooks(book: Book) {
     console.log(book);
     this.books.sort((a, b) => b.rating - a.rating);
+  }
+
+  add(book: Book) {
+    this.books.push(book);
   }
 }
