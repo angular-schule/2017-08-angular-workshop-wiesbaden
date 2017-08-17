@@ -2,24 +2,16 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DashboardComponent } from './dashboard.component';
 
-xdescribe('DashboardComponent', () => {
+describe('DashboardComponent', () => {
   let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
-    })
-    .compileComponents();
-  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new DashboardComponent();
+    // poor man's livecycle
+    component.ngOnInit();
   });
 
-  it('should be created', () => {
-    expect(component).toBeTruthy();
+  it('should have 3 books', () => {
+    expect(component.books.length).toBe(3);
   });
 });
