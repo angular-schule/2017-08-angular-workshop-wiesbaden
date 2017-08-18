@@ -1,3 +1,4 @@
+import { AuthService } from './shared/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Book Rating';
+
+  constructor(public auth: AuthService) {
+  }
 }

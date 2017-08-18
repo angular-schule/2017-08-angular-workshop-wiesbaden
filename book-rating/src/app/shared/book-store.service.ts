@@ -13,7 +13,7 @@ export class BookStoreService {
 
   getAll(): Observable<Book[]> {
     return this.http
-      .get<any[]>('http://api.angular.schule/books')
+      .get<any[]>('http://api.angular.schule/secure/books')
       .map(plainArray =>
         plainArray.map(b => new Book(
           b.isbn,

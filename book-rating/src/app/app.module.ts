@@ -1,7 +1,9 @@
+import { TokenInterceptorService } from './shared/token-interceptor.service';
+import { AuthService } from './shared/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,8 +31,14 @@ import { BookDetailsComponent } from './book-details/book-details.component';
     HttpClientModule
   ],
   providers: [
-    BookStoreService
+    BookStoreService,
+    AuthService,
+        { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(auth: AuthService) {
+    auth.handleAuthentication();
+  }
+}
