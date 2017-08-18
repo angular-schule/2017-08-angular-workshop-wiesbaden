@@ -1,4 +1,4 @@
-<form #bookForm="ngForm">
+<form #bookForm="ngForm" (ngSubmit)="add()">
 
   <div class="form-group">
     <label for="isbn">ISBN</label>
@@ -30,9 +30,8 @@
   </div>
 
   <div class="form-group">
-    <button type="button"
+    <button type="submit"
             class="btn btn-danger"
-            (click)="add()"
             [disabled]="!bookForm.valid"
             >Submit</button>
   </div>
