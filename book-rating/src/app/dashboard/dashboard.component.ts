@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from './../shared/book';
+import { HttpClient } from '@angular/common/http';
+
+import 'rxjs/add/operator/map'; // !!!! wichtig
 
 @Component({
   selector: 'br-dashboard',
@@ -9,6 +12,17 @@ import { Book } from './../shared/book';
 export class DashboardComponent implements OnInit {
 
   books: Book[];
+
+  constructor(private http: HttpClient) {
+
+    this.http.get<any[]>('http://api.angular.schule/books')
+      .map(plainArray =>
+        plainArray.map(b => new Book(b.isbn, b.title, b.description, b.rating))
+      )
+      .subscribe(response => {
+        this.books = response;
+      });
+  }
 
   ngOnInit() {
     this.books = [
