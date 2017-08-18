@@ -8,3 +8,16 @@
   (rated)="reorderBooks($event)"
 ></br-book>
 
+<hr>
+<h3>Kendo Grid</h3>
+
+<kendo-grid [data]="books" [height]="410">
+
+    <kendo-grid-column field="isbn" title="ISBN" width="150"></kendo-grid-column>
+    <kendo-grid-column field="title" title="Title" width="100"></kendo-grid-column>
+    <kendo-grid-column field="rating" title="Rating" width="50"></kendo-grid-column>
+    <kendo-grid-column field="description" title="Description"></kendo-grid-column>
+
+</kendo-grid>
+
+<br>

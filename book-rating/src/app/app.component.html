@@ -3,6 +3,7 @@
   {{title}}!
 </h1>
 
-<button (click)="auth.authorize()">Login</button>
+<button class="btn btn-success" (click)="auth.authorize()" *ngIf="!auth.isAuthenticated">Login</button>
+<small>( auth@angular.schule / auth0123 )</small><br>
 
 <router-outlet></router-outlet>
