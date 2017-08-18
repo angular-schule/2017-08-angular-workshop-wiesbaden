@@ -8,4 +8,6 @@
 
   <button (click)="rateDown()" class="btn glyphicon glyphicon-thumbs-down"></button>
   <button (click)="rateUp()" data-rate-up-button class="btn btn-danger  glyphicon glyphicon-thumbs-up"></button>
+
+  <a [routerLink]="['/book', book.isbn]" class="btn btn-default">Details</a>
 </div>
