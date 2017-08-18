@@ -18,7 +18,8 @@ export class DashboardComponent {
       .subscribe(books => {
         this.books = books;
         this.reorderBooks(null);
-      });
+      },
+      () => { console.warn('Fehler beim Laden!'); });
   }
   reorderBooks(book: Book) {
     console.log(book);
