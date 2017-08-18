@@ -10,6 +10,8 @@ import { BookComponent } from './book/book.component';
 import { AddOnePipe } from './add-one.pipe';
 import { CreateBookComponent } from './create-book/create-book.component';
 
+import { BookStoreService } from './shared/book-store.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { CreateBookComponent } from './create-book/create-book.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    BookStoreService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
